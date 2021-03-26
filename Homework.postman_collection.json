@@ -611,7 +611,7 @@
 							"}, function (err, res) {\r",
 							"                        pm.test(\"Check response\", function () {\r",
 							"                        if (pm.expect(res.code).to.eql(200)&&\r",
-							"                            pm.expect(res.text()).to.include(\"Cur_OfficialRate\"))\r",
+							"                            pm.expect(res.json()).to.include.keys(\"Cur_OfficialRate\"))\r",
 							"                           {console.log(res.json())}})         \r",
 							"                        }\r",
 							"                )\r",
